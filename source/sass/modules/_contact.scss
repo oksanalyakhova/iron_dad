@@ -1,0 +1,8 @@
+.contact-list {
+  &__item {
+    padding: 4px;
+    @include bp(991) {
+      padding: 0;
+    }
+  }
+}

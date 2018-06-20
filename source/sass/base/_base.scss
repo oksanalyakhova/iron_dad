@@ -1,0 +1,53 @@
+* {
+  outline: none;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+body {
+  margin: 0 auto;
+  min-width: $minWidth;
+  background-color: $bgBody;
+  overflow-x: hidden;
+  @include font(14px);
+}
+section {
+  margin: 0 0 80px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  @include links();
+}
+p,
+h1,
+h2,
+h3 {
+  &::selection {
+    background-color: lighten($colorTheme, 50%);
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+h3 {
+  @include bp(1200) {
+    font-size: 1.35rem;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  outline: none;
+}
+button {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

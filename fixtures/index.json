@@ -1,0 +1,264 @@
+{
+  mainSlider: {
+    prev: "Попередній",
+    next: "Наступний",
+    slides: [
+      {
+        image: "slide.jpg",
+        url: "product.html"
+      },
+      {
+        image: "slide.jpg",
+        url: "product.html"
+      },
+      {
+        image: "slide.jpg",
+        url: "product.html"
+      }
+    ]
+  },
+  recommendSlider: {
+    title: "Рекомендовані",
+    slides: [
+      {
+        image: "product.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "Муссоліні очима українців",
+        price: {
+          oldPrice: "170 грн",
+          currentPrice: "70 грн"
+        }
+      },
+      {
+        image: "product.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "Муссоліні очима українців",
+        price: {
+          oldPrice: "170 грн",
+          currentPrice: "70 грн"
+        }
+      },
+      {
+        image: "product.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "Муссоліні очима українців",
+        price: {
+          oldPrice: "170 грн",
+          currentPrice: "70 грн"
+        }
+      },
+      {
+        image: "product.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "Муссоліні очима українців",
+        price: {
+          oldPrice: "170 грн",
+          currentPrice: "70 грн"
+        }
+      },
+      {
+        image: "product.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "Муссоліні очима українців",
+        price: {
+          oldPrice: "170 грн",
+          currentPrice: "70 грн"
+        }
+      }
+    ]
+  },
+  authors: {
+    title: "Наші автори",
+    slides: [
+      {
+        image: "author-1.jpg",
+        url: "rubriration.html",
+        name: "Дмитро Савченко"
+      },
+      {
+        image: "author-2.jpg",
+        url: "rubriration.html",
+        name: "Олексій Бешуля"
+      },
+      {
+        image: "author-3.png",
+        url: "rubriration.html",
+        name: "Якийсь автор"
+      },
+      {
+        image: "author-3.png",
+        url: "rubriration.html",
+        name: "Якийсь інший автор"
+      },
+      {
+        image: "author-3.png",
+        url: "rubriration.html",
+        name: "Якийсь зовсім інший автор"
+      },
+      {
+        image: "author-3.png",
+        url: "rubriration.html",
+        name: "Якийсь автор"
+      },
+      {
+        image: "author-3.png",
+        url: "rubriration.html",
+        name: "Якийсь інший автор"
+      },
+      {
+        image: "author-3.png",
+        url: "rubriration.html",
+        name: "Якийсь зовсім інший автор"
+      }
+    ]
+  },
+  topSlider: {
+    title: "Лідери продажів",
+    slides: [
+      {
+        image: "top.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "ТежBeshket - перша книга новою українською латинкою",
+        price: {
+          oldPrice: "",
+          currentPrice: "150 грн"
+        }
+      },
+      {
+        image: "top.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "ТежBeshket - перша книга новою українською латинкою",
+        price: {
+          oldPrice: "",
+          currentPrice: "150 грн"
+        }
+      },
+      {
+        image: "top.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "ТежBeshket - перша книга новою українською латинкою",
+        price: {
+          oldPrice: "",
+          currentPrice: "150 грн"
+        }
+      },
+      {
+        image: "top.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "ТежBeshket - перша книга новою українською латинкою",
+        price: {
+          oldPrice: "",
+          currentPrice: "150 грн"
+        }
+      },
+      {
+        image: "top.jpg",
+        url: "product.html",
+        buyIcon: "shopping-bag",
+        ratingIcon: "star",
+        caption: "ТежBeshket - перша книга новою українською латинкою",
+        price: {
+          oldPrice: "",
+          currentPrice: "150 грн"
+        }
+      }
+    ]
+  },
+  blog: {
+    title: "Останні дописи Тата",
+    moreBtn: {
+      btnUrl: "blog.html",
+      btnText: "Усі дописи Тата"
+    },
+    posts: [
+      {
+        image: "news-1.jpg",
+        url: "post.html",
+        tagUrl: "#",
+        title: "У співпраці з лідером проекту Дух Нації Юрій Руф (Юрій Руф Львівський) за півтора місяці у світ вийде наша перша дитяча книжка, дуже гарна та містична.",
+        date: "03 квітня 2018",
+        tag: "#залізно_актуально",
+        text: "На її сторінках оживуть та набудуть нової подоби персонажі української міфології - русалки, мавки, лісовики, домовики та інші духи, що органічно вплелися до українських традиційних уявлень про навколишній світ!",
+        moreIcon: "arrow-right"
+      },
+      {
+        image: "news-2.jpg",
+        url: "post.html",
+        title: "Дмитро Савченко &#171;Антипролог&#187;, &#171;Муссоліні очима українців&#187;.",
+        date: "03 квітня 2018",
+        tag: "#книгоскоп",
+        text: "Траєкторія вчинків цієї постаті полярними гранями сягає від дезертира і авантюриста до ексцентричного скандаліста та родоначальника масового фашистського руху. Означений шлях містить в собі незлічені гамбіти і цугцванги, вправні рокірування і відточені трикутники. І раптом за конусом прожекторного світла лунає: &#171;Дубль, мотор, камера!&#187; У кадрі &#8211; упереджений та суперечливий ракурс документалістики про Беніто. У його палкій дріатичній душі нескладно розпізнати правопорушника і хулігана, неуспішного молодого вчителя та соціаліста холеричного складу характера, що тунелями ночі вимушено тікає за кордон.       На чужині його шлях супроводжують осуд та скитання, а замикають життєве коло знущання біснуватого натовпу над тілом розстріляного диктатора на бензозаправці під Міланом 1945 року.",
+        moreIcon: "arrow-right"
+      },
+      {
+        image: "news-3.jpg",
+        url: "post.html",
+        title: "Вже завтра Луцьк зможе познайомитись зі скромним видавничим кейсом Zалізного Тата.",
+        date: "03 квітня 2018",
+        tag: "#книгоскоп",
+        text: "Ну і принагідно почути від Олексій Бешуля та Дмитро Савченко цікаву інфу про українських мислителів 1930-их рр. та їх мандрівку до Італії, логічним підсумком якої стали дві книги про Беніто Муссоліні.",
+        moreIcon: "arrow-right"
+      },
+      {
+        image: "news-4.jpg",
+        url: "post.html",
+        title: "Відтепер чудовий новодрук &#171;Нема чим робить&#187; авторства Ivan Semesyuk можна також придбати у крамниці потужного видавництва Люта Справа!",
+        date: "03 квітня 2018",
+        tag: "#книгоскоп",
+        text: "Дякуємо Андрій Гончарук за співпрацю і підтримку нашого молодого, але нахабного, підприємства.",
+        moreIcon: "arrow-right"
+      },
+      {
+        image: "news-5.jpg",
+        url: "post.html",
+        title: "Завтра буде дуже весело. І навіть веселіше!",
+        date: "03 квітня 2018",
+        tag: "#книгоскоп",
+        text: "Співпраця нашого видавництва з метром сучасної трешово-вишуканої поезії Ivan Semesyuk дає потужний віршований плід. Завтра буде перша презентація збірки віршів. І саме завтра її можна буде вперше придбати. Горіть в очікуванні та приходьте!",
+        moreIcon: "arrow-right"
+      },
+      {
+        image: "news-6.jpg",
+        url: "post.html",
+        tag: "#залізно_читай",
+        title: "У продаж надійшли дві нові книги - &#171;Як не пошитися в дурні, купуючи вживане авто&#187; та &#171;Як заробити на перепродажу автомобілів&#187;.",
+        date: "03 квітня 2018",
+        text: "Оскільки це перші книги цього року, то вони є акційними і при покупці обох видань вони коштуватимуть не 210 гривень, а 190 нестабільних українських гривень.До речі, ось історія цих книг від незрівнянної та чарівної Iryna Holub.",
+        moreIcon: "arrow-right"
+      }
+    ]
+  },
+  quotesSlider: {
+    title: "Цитата Тата",
+    slides: [
+      {
+        quoteIcon: "feather",
+        text: "Ми хочемо бути аристократами і демократами, консерваторами і лібералами, реакціонерами і революціонерами, легалістами і антилегалістами - у залежності від місця, часу і обстановки",
+        author: "Беніто Муссоліні"
+      },
+      {
+        quoteIcon: "feather",
+        text: "Усе значеннєве у діалозі визбируєш зазвичай між комами та після трьох крапок. А от увиразнити їх у потоці мовлення дозволяє специфічний поворот інтонації. Інтонація почасти більше важить, ніж слова. Вона слугує детонатором 98% побутових конфліктів. З інтонацією слід бути обережніше.",
+        author: "Дмитро Савченко | Zаколот"
+      }
+    ]
+  }
+}

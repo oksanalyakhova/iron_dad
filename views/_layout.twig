@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{{ title }}{% endblock %}</title>
+        {#font#}
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+        {#css#}
+        {% block styles %}
+
+        {% endblock %}
+        {#main css#}
+        <link rel="stylesheet" href="./css/style.css">
+        {#js libs#}
+        {% block scripts %}
+
+        {% endblock %}
+        {#main js#}
+        <script src="./js/main.js"></script>
+        {#site icon#}
+    {% endblock %}
+</head>
+<body id="top">
+    {#header start#}
+    <header id="site-header" class="d-flex flex-column header">
+        {#<div class="header__banner"></div>#}
+        {% block header %}
+            {% include "./modules/_header.twig" with {header: includes.header} %}
+        {% endblock %}
+    </header>
+    {#header end#}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {#footer start#}
+    <footer id="site-footer" class="footer">
+        {% block footer %}
+            {% include "./modules/_footer.twig" with {footer: includes.footer} %}
+        {% endblock %}
+    </footer>
+    {#footer end#}
+</body>
+</html>

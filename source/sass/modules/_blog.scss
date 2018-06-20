@@ -1,0 +1,43 @@
+// blog page
+
+// posts section
+.posts-list {
+  &__item {
+    padding: 0 0 10px;
+    border-bottom: 16px solid $colorText;
+  }
+  .post {
+    &__link {
+      &:hover,
+      &:active,
+      &:focus {
+        .posts__text {
+          color: $colorText;
+        }
+      }
+      & > * + * {
+        margin: 15px 0 0;
+      }
+    }
+    &__title {
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    &__date {
+      font-size: 12px;
+      font-weight: 900;
+      color: #a69974;
+    }
+    &__tag {
+      margin-bottom: .65rem;
+      font-weight: 900;
+    }
+    .feather {
+      margin-top: 5px;
+      width: 19px;
+      height: 19px;
+      stroke: $colorTheme
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.section-head {
+  position: relative;
+  margin-bottom: 4rem;
+  &::after {
+    @include pseudo();
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 550px;
+    border-radius: 23px;
+    background-color: $colorTheme;
+    @include bp(1200) {
+      width: 280px;
+    }
+  }
+}

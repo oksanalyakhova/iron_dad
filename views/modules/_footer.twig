@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row align-items-end footer-content">
+        <div class="col-12 text-center footer-content__item footer-content__item--1">
+            <div class="footer-links">
+                <ul class="d-flex justify-content-center links-list">
+                    {% for link in footer.socials %}
+                        <li class="links-list__item">
+                            <a class="d-flex justify-content-center align-items-center links-list__link" href="{{ link.url }}">
+                                <i data-feather="{{ link.icon }}"></i>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 d-flex flex-column align-items-center footer-content__item footer-content__item--2">
+            <a class="footer-logo" href="{{ footer.logoUrl }}">
+                <object type="image/svg+xml" data="./img/{{ footer.logoImg }}" class="site-logo"></object>
+            </a>
+            <div class="footer-copy">
+                <span>{{ footer.copyrights }}</span>
+            </div>
+        </div>
+    </div>
+    {#go-to-top#}
+    {% include "_go-top.twig" with includes.goToTop %}
+</div>

@@ -1,0 +1,28 @@
+.menu-is-open {
+  .feather {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+}
+.product-carousel {
+  .feather {
+    &.feather-shopping-bag {
+      width: 22px;
+      height: 22px;
+      stroke-width: 1;
+    }
+    &.feather-star {
+      width: 18px;
+      height: 18px;
+      stroke: #a69974;
+      &.star-is-full {
+        fill: #a69974;
+      }
+    }
+  }
+}

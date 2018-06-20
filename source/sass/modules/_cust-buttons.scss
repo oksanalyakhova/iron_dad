@@ -1,0 +1,24 @@
+.btn {
+  padding: 0.5rem 1.4rem;
+  font-size: .9rem;
+  font-weight: 900;
+  letter-spacing: .15rem;
+  border-width: .2rem;
+  border-style: solid;
+  border-radius: 0;
+  &:focus {
+    box-shadow: none;
+  }
+  &--colored {
+    text-transform: uppercase;
+    border: 1px solid #000;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $bgBody;
+      background-color: $colorText;
+      opacity: 1;
+      @include anim(all, .4s, ease-out, 0s);
+    }
+  }
+}

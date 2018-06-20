@@ -1,0 +1,26 @@
+#site-footer {
+  padding: 10rem 0 7rem;
+  position: relative;
+  color: $bgBody;
+  background-color: $colorText;
+  font-family: $family;
+  font-size: 1em;
+  line-height: 2;
+  .footer-content {
+    & > * + * {
+      margin: 40px 0 0;
+    }
+  }
+  .footer-links {
+    .links-list {
+      &__link {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .feather {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

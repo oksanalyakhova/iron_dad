@@ -1,0 +1,21 @@
+<div class="d-flex flex-column content-wrapper">
+    <div class="posts-list d-flex m-auto grid">
+        {% for post in blog.posts %}
+            <div class="posts-list__item post grid-item">
+                <h4 class="post__title">{{ post.title }}</h4>
+                <p class="post__date">{{ post.date }}</p>
+                <p class="post__tag tag">
+                    <a class="tag__link" href="{{ post.tagUrl }}">{{ post.tag }}</a>
+                </p>
+                <img class="post__img" src="./img/{{ post.image }}" alt="">
+                <p class="post__text">{{ post.text }}</p>
+                <a class="post__link" href="{{ post.url }}">
+                    <i data-feather="{{ post.moreIcon }}" class="float-right"></i>
+                </a>
+            </div>        
+        {% endfor %}
+    </div>
+    <div class="posts-btn text-center">
+        {% include "_colored-button.twig" with blog.moreBtn %}
+    </div>
+</div>

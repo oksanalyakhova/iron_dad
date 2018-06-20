@@ -1,0 +1,25 @@
+<div id="carousel-with-indicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        {% for slide in mainSlider.slides %}
+        <li data-target="#carousel-with-indicators" data-slide-to="{{ loop.index0 }}" class="{% if loop.first %}active{% endif %}"></li>
+        {% endfor %}
+    </ol>
+    <div class="carousel__wrapper">
+        <div class="carousel-inner">
+            {% for slide in mainSlider.slides %}
+            <div class="carousel-item {% if loop.first %}active{% endif %}">
+                <img class="d-block" src="./img/{{ slide.image }}" alt="">
+                <a href="{{ slide.url }}" class="carousel-item__link"></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <a class="carousel-control-prev d-none d-md-flex" href="#carousel-with-indicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">{{ mainSlider.prev }}</span>
+    </a>
+    <a class="carousel-control-next d-none d-md-flex" href="#carousel-with-indicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">{{ mainSlider.next }}</span>
+    </a>
+</div>

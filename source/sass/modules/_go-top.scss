@@ -1,0 +1,11 @@
+.go-top {
+  position: absolute;
+  top: 60px;
+  right: calc(50% - 40px);
+  .feather-chevron-up {
+    width: 80px;
+    height: 80px;
+    stroke: $colorTheme;
+    stroke-width: 1;
+  }
+}

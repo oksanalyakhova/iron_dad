@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Залізний тато</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="build/css/bootstrap.css">
+    <link rel="stylesheet" href="build/css/aos.css">
+    <link rel="stylesheet" href="build/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="build/css/slick.css">
+    <link rel="stylesheet" href="build/css/slick-theme.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="build/css/style.css">
+    <!-- js libs -->
+    <script src="build/js/jquery.js"></script>
+    <script src="build/js/bootstrap.js"></script>
+    <script src="build/js/feather.js"></script>
+    <script src="build/js/jquery.fancybox.js"></script>
+    <script src="build/js/isotope.pkgd.min.js"></script>
+    <script src="build/js/slick.js"></script>
+    <!-- main js -->
+    <script src="build/js/main.js"></script>
+    <!-- site icon -->
+</head>
+<body id="top">
+    <!-- header start -->
+    <header id="site-header" class="d-flex flex-column header">
+        <div class="header__banner"></div>
+        <div class="d-flex align-content-center container header__menu">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between justify-content-lg-center">
+                <!-- site logo -->
+                <a class="navbar-brand header-logo d-lg-none" href="index.html">
+                    <img src="build/img/header-logo.png" alt="">
+                </a>
+                <!-- toggle icon -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-dropdown" aria-controls="nav-dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i data-feather="align-right"></i>
+                    </span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-lg-center" id="nav-dropdown">
+                    <ul class="navbar-nav nav nav-list justify-content-center align-items-end align-items-lg-center">
+                        <li class="nav-item nav-list__item">
+                            <a class="nav-link nav-list__link" href="store.html" title="home">Книги Тата</a>
+                        </li>
+                        <li class="nav-item nav-list__item">
+                            <a class="nav-link nav-list__link" href="buy.html" title="about">Як придбати</a>
+                        </li>
+                        <li class="nav-item nav-list__item">
+                            <a class="nav-link nav-list__link" href="news.html" title="services">Новини</a>
+                        </li>
+                        <li class="nav-item nav-list__item">
+                            <a class="nav-link nav-list__link" href="actions.html" title="services">Краудфандинг</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex header__icons">
+                    <div class="search">
+                        <button class="btn dropdown-toggle d-flex justify-content-end align-items-center" id="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="search"></i>
+                        </button>
+                        <div class="dropdown-menu search__form" aria-labelledby="dropdown-button">
+                            <form class="px-4 py-3 d-flex align-items-center search-form" action="#">
+                                <div class="form-group">
+                                    <label class="sr-only" for="search">Пошук у Тата</label>
+                                    <input class="form-control" id="search" type="search" name="search" value="" placeholder="Пошук у Тата">
+                                </div>
+                                <button class="btn btn-default btn-lg d-flex align-items-center" type="button">
+                                    <i data-feather="arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <i data-feather="shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- main carousel section start -->
+    <section class="carousel-section">
+        <div class="container d-flex justify-content-center">
+            <div id="carousel-with-indicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-with-indicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-with-indicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block" src="build/img/slide.jpg" alt="">
+                        <a href="#" class="carousel-item__link"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="build/img/slide.jpg" alt="">
+                        <a href="#" class="carousel-item__link"></a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev d-none d-md-flex" href="#carousel-with-indicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Попередній</span>
+                </a>
+                <a class="carousel-control-next d-none d-md-flex" href="#carousel-with-indicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Наступний</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- main carousel section end -->
+    <!-- product carousel section start -->
+    <section class="product-section commend-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="text-center">
+                    <span>Рекомендовані</span>
+                </h3>
+            </div>
+            <div class="content-wrapper">
+                <div class="slick-carousel product-carousel">
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/product.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>Муссоліні очима українців</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">170 грн</span>
+                                    <span class="current-price">70 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/product.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>Муссоліні очима українців</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">70 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/product.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>Муссоліні очима українців</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">70 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/product.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>Муссоліні очима українців</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">70 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/product.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                    <i data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>Муссоліні очима українців</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">70 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product carousel section end -->
+    <!-- authors section start -->
+    <section class="gallery-section authors-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="text-center">
+                    <span>Наші автори</span>
+                </h3>
+            </div>
+            <div class="content-wrapper">
+                <div class="gallery authors-gallery">
+                    <div class="authors-gallery__item">
+
+                        <a href="#" class="authors-gallery__link"></a>
+                    </div>
+                    <div class="authors-gallery__item">
+
+                        <a href="#" class="authors-gallery__link"></a>
+                    </div>
+                    <div class="authors-gallery__item">
+
+                        <a href="#" class="authors-gallery__link"></a>
+                    </div>
+                    <div class="authors-gallery__item">
+
+                        <a href="#" class="authors-gallery__link"></a>
+                    </div>
+                    <div class="authors-gallery__item">
+
+                        <a href="#" class="authors-gallery__link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product carousel section end -->
+    <!-- product carousel section start -->
+    <section class="product-section top-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="text-center">
+                    <span>Лідери продажів</span>
+                </h3>
+            </div>
+            <div class="content-wrapper">
+                <div class="slick-carousel product-carousel">
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/top.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>ТежBeshket - перша книга новою українською латинкою</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">150 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/top.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>ТежBeshket - перша книга новою українською латинкою</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">150 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/top.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>ТежBeshket - перша книга новою українською латинкою</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">150 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/top.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>ТежBeshket - перша книга новою українською латинкою</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">150 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                    <div class="product-carousel__item">
+                        <div class="product-carousel__descr d-flex flex-column align-items-center">
+                            <div class="image">
+                                <img src="build/img/top.jpg" alt="">
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i data-feather="shopping-bag"></i>
+                            </div>
+                            <div class="details text-center">
+                                <div class="rating">
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                    <i class="star-is-full" data-feather="star"></i>
+                                </div>
+                                <div class="caption">
+                                    <h4>ТежBeshket - перша книга новою українською латинкою</h4>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">150 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="product-carousel__link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product carousel section end -->
+    <!-- news section start -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="text-center">
+                    <span>Останні дописи Тата</span>
+                </h3>
+            </div>
+            <div class="d-flex justify-content-center content-wrapper">
+                <div class="news-list d-flex grid">
+                    <div class="news-list__item news grid-item">
+                        <a class="news__link" href="#">
+                            <h4 class="news__title">У співпраці з лідером проекту Дух Нації Юрій Руф (Юрій Руф Львівський) за півтора місяці у світ вийде наша перша дитяча книжка, дуже гарна та містична.</h4>
+                            <p class="news__date">03 квітня 2018</p>
+                            <img class="news__img" src="build/img/news-1.jpg" alt="">
+                            <p class="news__text">
+                                На її сторінках оживуть та набудуть нової подоби персонажі української міфології - русалки, мавки, лісовики, домовики та інші духи, що органічно вплелися до українських традиційних уявлень про навколишній світ!
+                            </p>
+                            <i data-feather="arrow-right" class="float-right"></i>
+                        </a>
+                    </div>
+                    <div class="news-list__item news grid-item">
+                        <a class="news__link" href="#">
+                            <h4 class="news__title">Дмитро Савченко "Антипролог", "Муссоліні очима українців".</h4>
+                            <p class="news__date">26 березня 2018</p>
+                            <img class="news__img" src="build/img/news-2.jpg" alt="">
+                            <p class="news__text">
+                                Траєкторія вчинків цієї постаті полярними гранями сягає від дезертира і авантюриста до ексцентричного скандаліста та родоначальника масового фашистського руху.
+                                Означений шлях містить в собі незлічені гамбіти і цугцванги, вправні рокірування і відточені трикутники.
+                                І раптом за конусом прожекторного світла лунає: «Дубль, мотор, камера!»
+                                У кадрі – упереджений та суперечливий ракурс документалістики про Беніто.
+                                У його палкій дріатичній душі нескладно розпізнати правопорушника і хулігана, неуспішного молодого вчителя та соціаліста холеричного складу характера, що тунелями ночі вимушено тікає за кордон.
+                                На чужині його шлях супроводжують осуд та скитання, а замикають життєве коло знущання біснуватого натовпу над тілом розстріляного диктатора на бензозаправці під Міланом 1945 року.
+                            </p>
+                            <i data-feather="arrow-right" class="float-right"></i>
+                        </a>
+                    </div>
+                    <div class="news-list__item news grid-item">
+                        <a class="news__link" href="#">
+                            <h4 class="news__title">Відтепер чудовий новодрук "Нема чим робить" авторства Ivan Semesyuk можна також придбати у крамниці потужного видавництва Люта Справа!</h4>
+                            <p class="news__date">23 березня 2018</p>
+                            <img class="news__img" src="build/img/news-3.jpg" alt="">
+                            <p class="news__text">
+                                Дякуємо Андрій Гончарук за співпрацю і підтримку нашого молодого, але нахабного, підприємства.
+                            </p>
+                            <i data-feather="arrow-right" class="float-right"></i>
+                        </a>
+                    </div>
+                    <div class="news-list__item news grid-item">
+                        <a class="news__link" href="#">
+                            <h4 class="news__title">Завтра буде дуже весело. І навіть веселіше!</h4>
+                            <p class="news__date">09 березня 2018</p>
+                            <img class="news__img" src="build/img/news-4.jpg" alt="">
+                            <p class="news__text">
+                                Співпраця нашого видавництва з метром сучасної трешово-вишуканої поезії Ivan Semesyuk дає потужний віршований плід.
+                                Завтра буде перша презентація збірки віршів. І саме завтра її можна буде вперше придбати.
+                                Горіть в очікуванні та приходьте!
+                            </p>
+                            <i data-feather="arrow-right" class="float-right"></i>
+                        </a>
+                    </div>
+                    <div class="news-list__item news grid-item">
+                        <a class="news__link" href="#">
+                            <h4 class="news__title">У продаж надійшли дві нові книги - "Як не пошитися в дурні, купуючи вживане авто" та "Як заробити на перепродажу автомобілів".</h4>
+                            <p class="news__date">08 березня 2018</p>
+                            <img class="news__img" src="build/img/news-5.jpg" alt="">
+                            <p class="news__text">
+                                Оскільки це перші книги цього року, то вони є акційними і при покупці обох видань вони коштуватимуть не 210 гривень, а 190 нестабільних українських гривень.
+                                До речі, ось історія цих книг від незрівнянної та чарівної Iryna Holub.
+                            </p>
+                            <i data-feather="arrow-right" class="float-right"></i>
+                        </a>
+                    </div>
+                    <div class="news-list__item news grid-item">
+                        <a class="news__link" href="#">
+                            <h4 class="news__title">Вже завтра Луцьк зможе познайомитись зі скромним видавничим кейсом Zалізного Тата.</h4>
+                            <p class="news__date">11 грудня 2017</p>
+                            <img class="news__img" src="build/img/news-6.jpg" alt="">
+                            <p class="news__text">
+                                Ну і принагідно почути від Олексій Бешуля та Дмитро Савченко цікаву інфу про українських мислителів 1930-их рр. та їх мандрівку до Італії, логічним підсумком якої стали дві книги про Беніто Муссоліні.
+                            </p>
+                            <i data-feather="arrow-right" class="float-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news section start -->
+    <!-- footer start -->
+    <footer id="site-footer" class="footer">
+        <div class="container">
+            <div class="row align-items-end footer-content">
+                <div class="col-3 d-flex flex-column justify-content-center align-content-between footer-content__item footer-content__item--1">
+                    <a class="footer-logo" href="index.html">
+                        <img src="build/img/footer-logo.png" alt="">
+                    </a>
+                    <div class="footer-copy">&#169; 2018</div>
+                </div>
+                <div class="col-9 d-flex justify-content-center footer-content__item footer-content__item--2">
+                    <div class="footer-nav">
+                        <ul class="nav flex-column nav-list">
+                            <li class="nav-item nav-list__item">
+                                <a class="nav-list__link" href="about.html" title="about">Про Тата</a>
+                            </li>
+                            <li class="nav-item nav-list__item">
+                                <a class="nav-list__link" href="payment.html" title="payment">Оплата</a>
+                            </li>
+                            <li class="nav-item nav-list__item">
+                                <a class="nav-list__link" href="delivery.html" title="delivery">Доставка</a>
+                            </li>
+                            <li class="nav-item nav-list__item">
+                                <a class="nav-list__link" href="contacts.html" title="contacts">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- go-to-top -->
+            <div class="d-none go-top midnightHeader">
+                <a class="row justify-content-center align-items-center mr-0 ml-0 smoothscroll go-top-btn" title="Back to Top" href="#top">
+                    <i data-feather="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+</html>

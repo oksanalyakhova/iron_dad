@@ -1,0 +1,101 @@
+// container
+@mixin container($width: 90%, $max-width: 50em) {
+  width: $width;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+// clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// font
+@mixin font($fs, $lh: 1.2, $ls: .1em, $color: $colorText) {
+  font-family: $family;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $color;
+}
+
+// animation
+@mixin anim($param: all, $dur: .15s, $type: ease-in-out, $delay: 0s) {
+  transition: $param $dur $type $delay;
+}
+@mixin anim-param($params...) {
+  transition-property: $params;
+}
+@mixin no-anim {
+  transition: none;
+}
+
+// animation with keyframes
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+// gradient
+@mixin gradv($color1, $color2, $opacity: 50%) {
+  background: mix($color1, $color2, $opacity);
+  background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+  background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
+  background: linear-gradient(to right, $color1 0%, $color2 100%);
+}
+// break points & orientations
+@mixin bp($point, $type: max) {
+  @media screen and (#{$type}-width: #{$point}px) {@content;}
+}
+@mixin bp-min($point, $type: min) {
+  @media screen and (#{$type}-width: #{$point}px) {@content;}
+}
+@mixin bp-landscape($point, $type: max) {
+  @media screen and (#{$type}-width: #{$point}px) and (orientation: landscape) {@content;}
+}
+@mixin portrait() {
+  @media screen and (orientation: portrait) {@content;}
+}
+@mixin landscape() {
+  @media screen and (orientation: landscape) {@content;}
+}
+
+// links
+@mixin links () {
+  & {
+    opacity: 1;
+    @include anim(opacity, .15s, linear);
+    &:hover,
+    &:active,
+    &:focus {
+      color: inherit;
+      text-decoration: none;
+      opacity: .6;
+    }
+  }
+}
+// pseudo
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+

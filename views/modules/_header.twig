@@ -1,0 +1,78 @@
+<div class="d-flex align-content-center container header__menu">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+        {#site logo#}
+        <div class="navbar__logo">
+            <a class="navbar-brand header-logo d-flex align-items-center" href="{{ header.logoUrl }}">
+                <object type="image/svg+xml" data="./img/{{ header.logoImg }}" class="site-logo"></object>
+            </a>
+        </div>
+        <div class="navbar__nav d-flex justify-content-between flex-lg-column align-items-center flex-xl-row w-100">
+            {#menu#}
+            <div class="collapse navbar-collapse justify-content-lg-center" id="nav-dropdown">
+                <ul class="navbar-nav nav nav-list justify-content-center align-items-end align-items-lg-center">
+                    {% for nav in header.nav %}
+                        <li class="nav-item nav-list__item{% if nav.subnav %} has-children{% endif %}">
+                            <a {% if nav.subnav %}class="nav-link nav-list__link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"{% else %}class="nav-link nav-list__link"{% endif %} href="{{ nav.link }}">{{ nav.name }}</a>
+                            {% if nav.subnav %}
+                                <span class="caret-icon">
+                                <i data-feather="{{ header.caretIcon }}"></i>
+                            </span>
+                                <ul class="subnav subnav-list dropdown-menu" aria-labelledby="dropdown-submenu">
+                                    {% for item in nav.subnav %}
+                                        <li class="subnav-item subnav-list__item">
+                                            <a class="subnav-link subnav-list__link" href="{{ item.link }}">{{ item.name }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {#icons#}
+            <div class="d-flex navbar__icons">
+                {#phone#}
+                <div class="phone">
+                    <a href="tel:5555555555" class="btn d-flex justify-content-end align-items-center">
+                        <i data-feather="{{ header.phoneIcon }}"></i>
+                    </a>
+                </div>
+                {#search#}
+                <div class="search">
+                    <a href="" class="btn dropdown-toggle d-flex justify-content-end align-items-center" id="dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i data-feather="{{ header.searchIcon }}"></i>
+                    </a>
+                    <div class="dropdown-menu search__form" aria-labelledby="dropdown-button">
+                        <form class="px-4 py-3 d-flex align-items-center search-form" action="#">
+                            <div class="form-group">
+                                {% import "_forms.twig" as forms %}
+                                {{ forms.input("search", "Пошук у Тата", "search", "search", null, "Пошук у Тата") }}
+                            </div>
+                            <button class="btn btn-default btn-lg d-flex align-items-center" type="button">
+                                <i data-feather="{{ header.searchIconArrow }}"></i>
+                                <i data-feather="{{ header.searchIconDel }}"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                {#cart#}
+                <div class="cart">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <a class="cart-link" href="{{ header.cartUrl }}">
+                            <i data-feather="{{ header.cartIcon }}"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__btn">
+            {#toggle icon#}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-dropdown" aria-controls="nav-dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i data-feather="{{ header.togglerIcon }}"></i>
+                </span>
+            </button>
+        </div>
+
+    </nav>
+</div>

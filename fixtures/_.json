@@ -1,0 +1,108 @@
+{
+  title: "Залізний тато - Література прямої дії",
+  includes: {
+    header: {
+      logoUrl: "index.html",
+      logoImg: "logo.svg",
+      phoneIcon: "phone",
+      togglerIcon: "align-right",
+      caretIcon: "chevron-down",
+      nav: [
+        {
+          name: "Крамниця",
+          link: "shop.html",
+          subnav: [
+            {
+              name: "Проза",
+              link: "rubriration.html"
+            },
+            {
+              name: "Поезія",
+              link: "rubriration.html"
+            },
+            {
+              name: "Історичне",
+              link: "rubriration.html"
+            },
+            {
+              name: "Військове",
+              link: "rubriration.html"
+            },
+            {
+              name: "Практичне",
+              link: "rubriration.html"
+            },
+            {
+              name: "Дитяче",
+              link: "rubriration.html"
+            },
+            {
+              name: "Усі",
+              link: "shop.html"
+            }
+          ]
+        },
+        {
+          name: "Як придбати",
+          link: "buy.html"
+        },
+        {
+          name: "Блог Тата",
+          link: "blog.html"
+        },
+        {
+          name: "Про Тата",
+          link: "about.html"
+        },
+        {
+          name: "Спільнодрук",
+          link: "crowdfunding.html"
+        }
+      ],
+      searchIcon: "search",
+      searchIconArrow: "arrow-right",
+      searchIconDel: "x",
+      cartUrl: "cart.html",
+      cartIcon: "shopping-cart"
+    },
+    footer: {
+      logoUrl: "index.html",
+      logoImg: "logo-footer.svg",
+      copyrights: "&copy; Видавництво &#171;Залізний тато&#187; 2018",
+      links: [
+        {
+          name: "Про Тата",
+          link: "about.html"
+        },
+        {
+          name: "Оплата",
+          link: "payment.html"
+        },
+        {
+          name: "Доставка",
+          link: "delivery.html"
+        },
+        {
+          name: "Контакти",
+          link: "contacts.html"
+        }
+      ],
+      socials: [
+        {
+          name: "facebook",
+          icon: "facebook",
+          url: "https://www.facebook.com/zaliznyitato/"
+        },
+        {
+          name: "instagram",
+          icon: "instagram",
+          url: "#"
+        }
+      ]
+    },
+    goToTop: {
+      link: "#top",
+      icon: "chevron-up"
+    }
+  }
+}

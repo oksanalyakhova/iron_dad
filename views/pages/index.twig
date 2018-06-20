@@ -1,0 +1,60 @@
+{% extends "../_layout.twig" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+{% endblock %}
+
+{% block scripts %}
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/feather.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/slick.js"></script>
+{% endblock %}
+
+{% block content %}
+    {#main carousel section start#}
+    <section class="carousel-section">
+        <div class="container d-flex justify-content-center">
+            {% include "../modules/_general-slider.twig" %}
+        </div>
+    </section>
+    {#main carousel section end#}
+    {#recommend carousel section start#}
+    <section class="product-section commend-section">
+        <div class="container">
+            {% include "../modules/_section-title.twig" with { sectionTitle: recommendSlider.title } %}
+            {% include "../modules/_product-slider.twig" with {productSlider: recommendSlider} %}
+        </div>
+    </section>
+    {#recommend carousel section end#}
+    {#authors carousel section start#}
+    <section class="authors-section">
+        <div class="container">
+            {% include "../modules/_section-title.twig" with { sectionTitle: authors.title } %}
+            {% include "../modules/_authors-slider.twig" %}
+        </div>
+    </section>
+    {#authors carousel section end#}
+    {#recommen carousel section start#}
+    <section class="product-section commend-section">
+        <div class="container">
+            {% include "../modules/_section-title.twig" with { sectionTitle: topSlider.title } %}
+            {% include "../modules/_product-slider.twig" with {productSlider: topSlider} %}
+        </div>
+    </section>
+    {#recommen carousel section end#}
+    {#blog section start#}
+    <section class="blog-section">
+        <div class="container">
+            {% include "../modules/_section-title.twig" with { sectionTitle: blog.title } %}
+            {% include "../modules/_blog.twig" with {moreBtn: moreBtn} %}
+        </div>
+    </section>
+    {#blog section end#}
+{% endblock %}

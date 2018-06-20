@@ -1,0 +1,33 @@
+<div class="content-wrapper">
+    <div class="slick-carousel product-carousel">
+        {% for slide in productSlider.slides %}
+            <div class="product-carousel__item">
+                <div class="product-carousel__descr d-flex flex-column align-items-center">
+                    <div class="image">
+                        <img src="./img/{{ slide.image }}" alt="">
+                    </div>
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <i data-feather="{{ slide.buyIcon }}"></i>
+                    </div>
+                    <div class="details text-center">
+                        <div class="rating">
+                            <i class="star-is-full" data-feather="{{ slide.ratingIcon }}"></i>
+                            <i class="star-is-full" data-feather="{{ slide.ratingIcon }}"></i>
+                            <i class="star-is-full" data-feather="{{ slide.ratingIcon }}"></i>
+                            <i class="star-is-full" data-feather="{{ slide.ratingIcon }}"></i>
+                            <i class="star-is-full" data-feather="{{ slide.ratingIcon }}"></i>
+                        </div>
+                        <div class="caption">
+                            <h4>{{ slide.caption }}</h4>
+                        </div>
+                        <div class="price">
+                            <span class="old-price">{{ slide.price.oldPrice }}</span>
+                            <span class="current-price">{{ slide.price.currentPrice }}</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ slide.url }}" class="product-carousel__link"></a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
